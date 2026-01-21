@@ -15,6 +15,7 @@ Analyze and visualize **Formula 1 drivers’ lap performances** across seasons w
 - [Example Output](#example-output)  
 - [Customization](#customization)  
 - [Acknowledgements](#acknowledgements)  
+- [Liecense](#liecense)
 
 ---
 
@@ -46,7 +47,8 @@ Key highlights include:
 The repository is organized as follows:
 
 F1-Lap-Comparison/
-│
+├─ data/
+  └─ cache/
 ├─ config.py           # Project configuration (driver, track, session, years)
 ├─ load_data.py        # Functions to load fastest lap telemetry using FastF1
 ├─ preprocess.py       # Functions to normalize telemetry distances
@@ -61,45 +63,45 @@ F1-Lap-Comparison/
 
 1. Clone this repository:
 
-```bash
+```
 git clone https://github.com/your-username/f1-lap-comparison.git
 cd f1-lap-comparison
-
-	2.	Create and activate a virtual environment (recommended):
-
+```
+2.	Create and activate a virtual environment (recommended):
+```
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-	3.	Install dependencies:
-
+```
+3.	Install dependencies:
+```
 pip install -r requirements.txt
-
+```
 ⚠️ Make sure you have ffmpeg installed on your system for exporting MP4 animations.
 
-⸻
+---
 
-Usage
-	1.	Update config.py with your preferred driver, track, session, and years:
-
+## Usage
+1.	Update config.py with your preferred driver, track, session, and years:
+```
 YEAR_1 = 2019
 YEAR_2 = 2025
 DRIVER = "NOR"
 TRACK = "Spa-Francorchamps"
 SESSION = "Q"  # Q = Qualifying, R = Race, FP1/FP2/FP3 = Practice
-
-	2.	Run the main script:
-
+```
+2.	Run the main script:
+```
 python main.py
-
-	3.	The script will:
+```
+3.	The script will:
 	•	Load telemetry for both years
 	•	Normalize distance and compute sector times
 	•	Generate a ghost lap animation
 	•	Export the animation as ghost_lap_comparison.mp4
 
-⸻
+---
 
-Dependencies
+## Dependencies
 	•	Python 3.9+
 	•	FastF1￼ – F1 telemetry library
 	•	NumPy
@@ -107,41 +109,33 @@ Dependencies
 	•	FFmpeg (for animation export)
 
 Install all Python dependencies with:
-
+```
 pip install fastf1 numpy matplotlib
+```
+---
 
-
-⸻
-
-Example Output
-	•	Animated ghost lap of Lando Norris comparing 2019 vs 2025 on Spa-Francorchamps
-	•	Speed vs Distance graph with moving cursor
-	•	Sector-wise delta displayed in real-time
+## Example Output
+•	Animated ghost lap of Lando Norris comparing 2019 vs 2025 on Spa-Francorchamps
+•	Speed vs Distance graph with moving cursor
+•	Sector-wise delta displayed in real-time
 
 ⚠️ The cache folder data/cache will store session data to speed up repeated runs.
 
-⸻
-
-Customization
-	•	Change the driver, track, session, or years in config.py.
-	•	Adjust plot styling and colors in style.py.
-	•	Modify sector split logic in analysis.py for more than 3 sectors.
-	•	Enable dark mode by uncommenting the line in visualization.py:
-
-# plt.style.use("dark_background")
-
-
-⸻
-
-Acknowledgements
-	•	FastF1 Library￼ – Telemetry data source
-	•	Formula 1 community for telemetry and data insights
-	•	Inspiration from ghost lap animations in F1 broadcasts
-
 ---
 
-✅ This is **fully continuous Markdown**, with no extra explanatory text outside the Markdown. You can **copy-paste this directly into `README.md`**, and it will render perfectly on GitHub.  
+## Customization
+•	Change the driver, track, session, or years in config.py.
+•	Adjust plot styling and colors in style.py.
+•	Modify sector split logic in analysis.py for more than 3 sectors.
+•	Enable dark mode by uncommenting the line in visualization.py:
+```
+# plt.style.use("dark_background")
+```
+---
 
-If you want, I can **also create a version with GitHub badges and a demo GIF/video section** to make your repo look professional and interactive.  
-
-Do you want me to do that next?
+## Acknowledgements
+•	FastF1 Library￼ – Telemetry data source
+•	Formula 1 community for telemetry and data insights
+•	Inspiration from ghost lap animations in F1 broadcasts
+---
+## Liecense
