@@ -15,7 +15,7 @@ Analyze and visualize **Formula 1 drivers’ lap performances** across seasons w
 - [Example Output](#example-output)  
 - [Customization](#customization)  
 - [Acknowledgements](#acknowledgements)  
-- [Liecense](#liecense)
+- [License](#license)
 
 ---
 
@@ -138,4 +138,4 @@ pip install fastf1 numpy matplotlib
 •	Formula 1 community for telemetry and data insights
 •	Inspiration from ghost lap animations in F1 broadcasts
 ---
-## Liecense
+## License
