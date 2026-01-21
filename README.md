@@ -1,4 +1,4 @@
-# F1 Lap Comparison – Ghost Lap Animation
+# F1 Lap Comparison – Ghost Lap Animation V 0.1
 
 Analyze and visualize **Formula 1 drivers’ lap performances** across seasons with a ghost lap animation. This project lets you compare a driver’s lap from one year against another on the same track, showing where time is gained or lost in each sector.  
 
@@ -133,9 +133,15 @@ pip install fastf1 numpy matplotlib
 ```
 ---
 
-## Acknowledgements
+## Acknowledgement
 •	FastF1 Library￼ – Telemetry data source
 •	Formula 1 community for telemetry and data insights
 •	Inspiration from ghost lap animations in F1 broadcasts
+
 ---
 ## License
+
+Copyright © 2026 Karim Attia
+
+Licensed under the MIT License. You may obtain a copy of the License in the
+[LICENSE](LICENSE) file included in this repository.
