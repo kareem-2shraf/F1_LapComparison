@@ -45,7 +45,7 @@ Key highlights include:
 ## Project Structure
 
 The repository is organized as follows:
-
+```
 F1-Lap-Comparison/
 ├─ data/
   └─ cache/
@@ -56,7 +56,7 @@ F1-Lap-Comparison/
 ├─ visualization.py    # Ghost lap animation and speed plotting
 ├─ style.py            # Color scheme and styling for plots
 └─ main.py             # Entry point to run the full comparison workflow
-
+```
 ---
 
 ## Installation
